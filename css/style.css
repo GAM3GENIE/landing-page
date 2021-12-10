@@ -1,4 +1,4 @@
-body{
+*{
     margin: 0;
     padding: 0;
 }
@@ -7,7 +7,7 @@ body{
 }
 .main_head{
     color: #f9faf8;
-    font-size: 20px;
+    font-size: 24px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -30,13 +30,20 @@ a{
     flex-direction: row;
     align-items: center;
 }
-.first_sec{
+.col_first_sec > h1{
     color: #f9faf8;
     font-size: 48px;
     font-weight: 800;
 }
-.first_sec > h1{
-    margin: 0%;
+.col_first_sec > p{
+    color: #e5e5e5;
+    font-size: 18px;
+}
+.col_first_sec > img{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
 }
 button{
     background-color: #3882f6;
@@ -45,11 +52,43 @@ button{
     color: #f9faf8;
     border-radius: 4px;
 }
+.row_first_sec{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    
+}
+.col_first_sec{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    align-content: center;
+    margin: 100px;
+    justify-content: space-evenly;
+}
+.second_sec{
+    background-color: #f9faf8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
 .second_sec > h2{
     color: #1f2937;
     font-weight: 36px;
     font-weight: 800;
     text-align: center;
+}
+.second_sec > img{
+    border: 3px solid #3882f6;
+    border-radius: 4px;
+    width: 150px;
+    height: 150px;
+}
+.second_sec > p{
+    color: gray;
 }
 .third_sec{
     background-color: #e5e7eb;
@@ -62,23 +101,8 @@ button{
     font-weight: bold;
     text-align: right;
 }
-.second_sec > img{
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    width: 150px;
-    height: 150px;
-}
-.first_sec > img{
-    width: 400px;
-    height: 400px;
-    object-fit: cover;
-}
 footer > h3, footer > p, footer > button{
     background-color: #3882f6;
-}
-footer > p, footer > h3{
-    margin: 0%;
 }
 
 
